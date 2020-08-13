@@ -1,0 +1,8 @@
+#ignorer le dossier vendor
+vendor
+
+#ignorer le dossier sql
+sql
+
+#ignorer tous les fichiers .sql
+*.sql
