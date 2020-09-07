@@ -18,7 +18,7 @@ require 'Article.php';
     <p>En construction</p>
     <?php
     $article = new Article();
-    $articles = $article->getArticle(1);
+    $articles = $article->getArticle($_GET['articleId']);
     $article = $articles->fetch()
     ?>
     <div>
@@ -31,6 +31,7 @@ require 'Article.php';
     <?php
     $articles->closeCursor();
     ?>
+    <a href="home.php">Retour à l'accueil</a>
 </div>
 </body>
 </html>
