@@ -5,7 +5,7 @@ class Database
     //Nos constantes
     const DB_HOST = 'mysql:host=localhost;dbname=blog;charset=utf8';
     const DB_USER = 'root';
-    const DB_PASS = '';
+    const DB_PASS = 'root';
 
     //Méthode de connexion à notre base de données
     public function getConnection()
@@ -23,5 +23,17 @@ class Database
             die ('Erreur de connection :'.$errorConnection->getMessage());
         }
 
+    }
+
+    protected function createQuery($sql, $parameters = null)
+    {
+        if($parameters)
+        {
+            $result = $this->getConnection()->prepare($sql);
+            $result->execute($parameters);
+            return $result;
+        }
+        $result = $this->getConnection()->query($sql);
+        return $result;
     }
 }
