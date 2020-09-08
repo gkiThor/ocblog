@@ -1,6 +1,6 @@
 <?php
 
-class Database
+abstract class Database
 {
     //Nos constantes
     const DB_HOST = 'mysql:host=localhost;dbname=blog;charset=utf8';
@@ -20,7 +20,7 @@ class Database
     }
 
     //Méthode de connexion à notre base de données
-    public function getConnection()
+    private function getConnection()
     {
         //Tentative de connexion à la base de données
         try{
