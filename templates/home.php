@@ -3,6 +3,9 @@
 require '../src/DAO/DAO.php';
 //Ne pas oublier d'ajouter le fichier Article.php
 require '../src/DAO/ArticleDAO.php';
+
+use App\src\DAO\ArticleDAO;
+
 ?>
 <!DOCTYPE html>
 <html lang="fr">
@@ -16,7 +19,7 @@ require '../src/DAO/ArticleDAO.php';
     <h1>Mon blog</h1>
     <p>En construction</p>
     <?php
-    $article = new \App\src\DAO\ArticleDAO();
+    $article = new ArticleDAO();
     $articles = $article->getArticles();
     while($article = $articles->fetch())
     {
