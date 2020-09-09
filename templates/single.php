@@ -5,8 +5,10 @@ require '../src/DAO/DAO.php';
 require '../src/DAO/ArticleDAO.php';
 //Ne pas oublier d'ajouter le fichier Comment.php
 require '../src/DAO/CommentDAO.php';
-?>
 
+use App\src\DAO\ArticleDAO;
+use App\src\DAO\CommentDAO;
+?>
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -19,7 +21,7 @@ require '../src/DAO/CommentDAO.php';
     <h1>Mon blog</h1>
     <p>En construction</p>
     <?php
-    $article = new \App\src\DAO\ArticleDAO();
+    $article = new ArticleDAO();
     $articles = $article->getArticle($_GET['articleId']);
     $article = $articles->fetch()
     ?>
@@ -37,7 +39,7 @@ require '../src/DAO/CommentDAO.php';
     <div id="comments" class="text-left" style="margin-left: 50px">
         <h3>Commentaires</h3>
         <?php
-        $comment = new \App\src\DAO\CommentDAO();
+        $comment = new CommentDAO();
         $comments = $comment->getCommentsFromArticle($_GET['articleId']);
         while($comment = $comments->fetch())
         {
