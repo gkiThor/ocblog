@@ -1,10 +1,12 @@
 <?php
-//On inclut le fichier dont on a besoin (ici à la racine de notre site)
-require '../src/DAO/DAO.php';
-//Ne pas oublier d'ajouter le fichier Article.php
-require '../src/DAO/ArticleDAO.php';
-//Ne pas oublier d'ajouter le fichier Comment.php
-require '../src/DAO/CommentDAO.php';
+// //On inclut le fichier dont on a besoin (ici à la racine de notre site)
+// require '../src/DAO/DAO.php';
+// //Ne pas oublier d'ajouter le fichier Article.php
+// require '../src/DAO/ArticleDAO.php';
+// //Ne pas oublier d'ajouter le fichier Comment.php
+// require '../src/DAO/CommentDAO.php';
+
+require '../vendor/autoload.php';
 
 use App\src\DAO\ArticleDAO;
 use App\src\DAO\CommentDAO;
