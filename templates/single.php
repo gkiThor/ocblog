@@ -1,16 +1,3 @@
-<?php
-// //On inclut le fichier dont on a besoin (ici à la racine de notre site)
-// require '../src/DAO/DAO.php';
-// //Ne pas oublier d'ajouter le fichier Article.php
-// require '../src/DAO/ArticleDAO.php';
-// //Ne pas oublier d'ajouter le fichier Comment.php
-// require '../src/DAO/CommentDAO.php';
-
-//require '../vendor/autoload.php';
-
-use App\src\DAO\ArticleDAO;
-use App\src\DAO\CommentDAO;
-?>
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -23,8 +10,6 @@ use App\src\DAO\CommentDAO;
     <h1>Mon blog</h1>
     <p>En construction</p>
     <?php
-    $article = new ArticleDAO();
-    $articles = $article->getArticle($_GET['articleId']);
     $article = $articles->fetch()
     ?>
     <div>
@@ -41,8 +26,6 @@ use App\src\DAO\CommentDAO;
     <div id="comments" class="text-left" style="margin-left: 50px">
         <h3>Commentaires</h3>
         <?php
-        $comment = new CommentDAO();
-        $comments = $comment->getCommentsFromArticle($_GET['articleId']);
         while($comment = $comments->fetch())
         {
             ?>
