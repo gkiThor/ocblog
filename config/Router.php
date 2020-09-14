@@ -12,7 +12,8 @@ class Router
             if(isset($_GET['route']))
             {
                 if($_GET['route'] === 'article'){
-                    require '../templates/single.php';
+                    $frontController = new FrontController();
+                    $frontController->article($_GET['articleId']);
                 }
                 else{
                     echo 'page inconnue';
