@@ -6,19 +6,25 @@ use App\src\DAO\CommentDAO;
 
 class FrontController
 {
+    private $articleDAO;
+    private $commentDAO;
+
+    public function __construct()
+    {
+        $this->articleDAO = new ArticleDAO();
+        $this->commentDAO = new CommentDAO();
+    }
+
     public function home()
     {
-        $article = new ArticleDAO();
-        $articles = $article->getArticles();
+        $articles = $this->articleDAO->getArticles();
         require '../templates/home.php';
     }
 
     public function article($articleId)
     {
-        $article = new ArticleDAO();
-        $articles = $article->getArticle($articleId);
-        $comment = new CommentDAO();
-        $comments = $comment->getCommentsFromArticle($articleId);
+        $article = $this->articleDAO->getArticle($articleId);
+        $comments = $this->commentDAO->getCommentsFromArticle($articleId);
         require '../templates/single.php';
     }
 }
