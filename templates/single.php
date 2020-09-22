@@ -20,17 +20,16 @@
     <div id="comments" class="text-left" style="margin-left: 50px">
         <h3>Commentaires</h3>
         <?php
-        while($comment = $comments->fetch())
+        foreach ($comments as $comment)
         {
             ?>
-            <h4><?= htmlspecialchars($comment->pseudo);?></h4>
-            <p><?= htmlspecialchars($comment->content);?></p>
-            <p>Posté le <?= htmlspecialchars($comment->createdAt);?></p>
+            <h4><?= htmlspecialchars($comment->getPseudo());?></h4>
+            <p><?= htmlspecialchars($comment->getContent());?></p>
+            <p>Posté le <?= htmlspecialchars($comment->getCreatedAt());?></p>
             <?php
         }
-        $comments->closeCursor();
         ?>
     </div>
 </div>
 </body>
-</html>
+</html>s
