@@ -1,9 +1,8 @@
 <?php
 
 namespace App\src\controller;
-use App\src\model\View;
 
-class ErrorController
+class ErrorController extends Controller
 {
     public function errorNotFound()
     {
@@ -14,5 +13,4 @@ class ErrorController
     {
         return $this->view->render('error_500');
     }
-    
 }
