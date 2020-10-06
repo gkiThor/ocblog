@@ -27,12 +27,25 @@ class BackController extends Controller
     {
         $article = $this->articleDAO->getArticle($articleId);
         if($post->get('submit')) {
-            $this->articleDAO->editArticle($post, $articleId);
-            $this->session->set('edit_article', 'L\' article a bien été modifié');
-            header('Location: ../public/index.php');
+            $errors = $this->validation->validate($post, 'Article');
+            if(!$errors) {
+                $this->articleDAO->editArticle($post, $articleId);
+                $this->session->set('edit_article', 'L\' article a bien été modifié');
+                header('Location: ../public/index.php');
+            }
+            return $this->view->render('edit_article', [
+                'post' => $post,
+                'errors' => $errors
+            ]);
+
         }
+        $post->set('id', $article->getId());
+        $post->set('title', $article->getTitle());
+        $post->set('content', $article->getContent());
+        $post->set('author', $article->getAuthor());
+
         return $this->view->render('edit_article', [
-            'article' => $article
+            'post' => $post
         ]);
     }
 }
