@@ -25,6 +25,8 @@
         <h4><?= htmlspecialchars($comment->getPseudo());?></h4>
         <p><?= htmlspecialchars($comment->getContent());?></p>
         <p>Posté le <?= htmlspecialchars($comment->getCreatedAt());?></p>
+        <p><a href="../public/index.php?route=flagComment&commentId=<?= $comment->getId(); ?>">Signaler le commentaire</a></p>
+        <br>
         <?php
     }
     ?>
