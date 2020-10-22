@@ -54,6 +54,9 @@ class Router
                 elseif($route === 'login'){
                     $this->frontController->login($this->request->getPost());
                 }
+                elseif($route === 'profile'){
+                    $this->backController->profile();
+                }
                 else{
                     $this->errorController->errorNotFound();
                 }
