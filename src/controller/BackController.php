@@ -77,4 +77,10 @@ class BackController extends Controller
         }
         return $this->view->render('update_password');
     }
+
+    public function logout()
+    {
+        $this->session->stop();
+        header('Location: ../public/index.php');
+    }
 }
