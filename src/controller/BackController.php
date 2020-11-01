@@ -8,7 +8,10 @@ class BackController extends Controller
 {
     public function administration()
     {
-        return $this->view->render('administration');
+        $articles = $this->articleDAO->getArticles();
+        return $this->view->render('administration', [
+            'articles' => $articles
+        ]);
     }
 
     public function addArticle(Parameter $post)
