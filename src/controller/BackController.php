@@ -34,7 +34,7 @@ class BackController extends Controller
         if($post->get('submit')) {
             $errors = $this->validation->validate($post, 'Article');
             if(!$errors) {
-                $this->articleDAO->editArticle($post, $articleId);
+                $this->articleDAO->editArticle($post, $articleId, $this->session->get('id'));
                 $this->session->set('edit_article', 'L\' article a bien été modifié');
                 header('Location: ../public/index.php');
             }
