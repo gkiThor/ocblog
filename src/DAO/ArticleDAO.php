@@ -40,10 +40,10 @@ class ArticleDAO extends DAO
         return $this->buildObject($article);
     }
 
-    public function addArticle(Parameter $post)
+    public function addArticle(Parameter $post, $userId)
     {
-        $sql = 'INSERT INTO article (title, content, author, createdAt) VALUES (?, ?, ?, NOW())';
-        $this->createQuery($sql, [$post->get('title'), $post->get('content'), $post->get('author')]);
+        $sql = 'INSERT INTO article (title, content, createdAt, user_id) VALUES (?, ?, NOW(), ?)';
+        $this->createQuery($sql, [$post->get('title'), $post->get('content'), $userId]);
     }
 
     public function editArticle(Parameter $post, $articleId)
