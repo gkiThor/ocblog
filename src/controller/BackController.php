@@ -9,8 +9,10 @@ class BackController extends Controller
     public function administration()
     {
         $articles = $this->articleDAO->getArticles();
+        $comments = $this->commentDAO->getFlagComments();
         return $this->view->render('administration', [
-            'articles' => $articles
+            'articles' => $articles,
+            'comments' => $comments
         ]);
     }
 
