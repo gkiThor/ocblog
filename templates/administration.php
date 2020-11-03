@@ -5,6 +5,7 @@
 <?= $this->session->show('add_article'); ?>
 <?= $this->session->show('edit_article'); ?>
 <?= $this->session->show('delete_article'); ?>
+<?= $this->session->show('unflag_comment'); ?>
 <h2>Articles</h2>
 <a href="../public/index.php?route=addArticle">Nouvel article</a>
 <table>
@@ -54,7 +55,10 @@
             <td><?= htmlspecialchars($comment->getPseudo());?></td>
             <td><?= substr(htmlspecialchars($comment->getContent()), 0, 150);?></td>
             <td>Créé le : <?= htmlspecialchars($comment->getCreatedAt());?></td>
-            <td>En construction</td>
+            <td>
+                <a href="../public/index.php?route=unflagComment&commentId=<?= $comment->getId(); ?>">Désignaler le commentaire</a>
+                <a href="../public/index.php?route=deleteComment&commentId=<?= $comment->getId(); ?>">Supprimer le commentaire</a>
+            </td>
         </tr>
         <?php
     }
