@@ -7,6 +7,7 @@
 <?= $this->session->show('delete_article'); ?>
 <?= $this->session->show('unflag_comment'); ?>
 <?= $this->session->show('delete_comment'); ?>
+<?= $this->session->show('delete_user'); ?>
 <h2>Articles</h2>
 <a href="../public/index.php?route=addArticle">Nouvel article</a>
 <table>
@@ -84,7 +85,19 @@
             <td><?= htmlspecialchars($user->getPseudo());?></td>
             <td>Créé le : <?= htmlspecialchars($user->getCreatedAt());?></td>
             <td><?= htmlspecialchars($user->getRole());?></td>
-            <td>En construction</td>
+            <td>
+                <?php
+                if($user->getRole() != 'admin') {
+                ?>
+                <a href="../public/index.php?route=deleteUser&userId=<?= $user->getId(); ?>">Supprimer</a>
+                <?php }
+                else {
+                    ?>
+                Suppression impossible
+                <?php
+                }
+                ?>
+            </td>
         </tr>
         <?php
     }
