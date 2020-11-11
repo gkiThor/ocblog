@@ -35,7 +35,6 @@ abstract class DAO
         {
             die ('Erreur de connection :'.$errorConnection->getMessage());
         }
-
     }
 
     protected function createQuery($sql, $parameters = null)

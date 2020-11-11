@@ -1,7 +1,14 @@
 <?php $this->title = 'Accueil'; ?>
 
-<h1>Mon blog</h1>
-<p>En construction</p>
+<h1>Developpeur Backend PHP/Symfony</h1>
+<p>Nom</p>
+<p>Prénom</p>
+<p>photo</p>
+<p>Je suis le développeur qu'il vous faut!</p>
+<p>un menu pour naviguer</p>
+<p>un formulaire de contact</p>
+<p>un lien vers le CV en pdf</p>
+<p>lien réseaux sociaux</p>
 <?= $this->session->show('add_article'); ?>
 <?= $this->session->show('edit_article'); ?>
 <?= $this->session->show('delete_article'); ?>
