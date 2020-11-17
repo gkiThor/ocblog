@@ -10,22 +10,6 @@
                   <a href="../public/index.php" class="nav-link text-left">Accueil</a>
                 </li>
                 <li>
-                  <a href="#" class="nav-link text-left">Categories</a>
-                </li>
-                <li>
-                  <a href="#" class="nav-link text-left">Politics</a>
-                </li>
-                <li>
-                  <a href="#" class="nav-link text-left">Business</a>
-                </li>
-                <li>
-                    <a href="#" class="nav-link text-left">Health</a>
-                </li>
-                <li><a href="#" class="nav-link text-left">Design</a></li>
-                <li>
-                  <a href="#" class="nav-link text-left">Sport</a>
-                </li>
-                <li>
                     <a href="../public/index.php?route=contact" class="nav-link text-left">Contact</a>
                 </li>
 
