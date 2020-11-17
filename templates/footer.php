@@ -6,9 +6,8 @@
           <div class="col-12">
               
             <div class="copyright">
-                <p>SOULICHANH Guillaume</p>
                 <p>
-                    Copyright &copy;<script>document.write(new Date().getFullYear());</script> 
+                SOULICHANH Guillaume - Copyright &copy;<script>document.write(new Date().getFullYear());</script> 
                 </p>
             </div>
           </div>
