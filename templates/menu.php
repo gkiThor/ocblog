@@ -25,7 +25,7 @@
                 <li>
                   <a href="categories.html" class="nav-link text-left">Sport</a>
                 </li>
-                <li><a href="contact.html" class="nav-link text-left">Contact</a></li>
+                <li><a href="../templates/contact.php" class="nav-link text-left">Contact</a></li>
 
               </ul>                                                                                                                                                                                                                                                                                         
             </nav>
