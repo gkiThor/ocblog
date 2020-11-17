@@ -6,6 +6,17 @@
                 <div class="site-section">
                     <div class="container">
                         <div class="row">
+                                <div class="col-12 text-center">
+                                    <div class="section-title mb-5">
+                                        <h2>Bienvenue</h2>
+                                        <p>Je me présente SOULICHANH Guillaume 39 ans.</br>
+                                        Actuellement en formation à distance avec OpenClassroom depuis 2019.</br> 
+                                        Pour acquérir le titre de développeur PHP/Symfony.</p>
+
+                                    </div>
+                                </div>
+                        </div>
+                        <div class="row">
                             <div class="col-12 text-left">
                                 <div class="section-title mb-5">
                                 <h2>SOULICHANH Guillaume</h2>
@@ -31,9 +42,6 @@
                     </div>
                 </div>
 
-                <div class="container">
-                    <h3>Je suis le développeur qu'il vous faut!</h3>
-                </div>
 
                 <p>un lien vers le CV en pdf</p>
                 <p>lien réseaux sociaux</p>

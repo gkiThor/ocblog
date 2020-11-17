@@ -21,13 +21,9 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-md-6 form-group">
+                        <div class="col-md-12 form-group">
                             <label for="eaddress">Addresse email</label>
                             <input type="text" id="eaddress" class="form-control form-control-lg">
-                        </div>
-                        <div class="col-md-6 form-group">
-                            <label for="tel">Téléphone</label>
-                            <input type="text" id="tel" class="form-control form-control-lg">
                         </div>
                     </div>
                     <div class="row">
