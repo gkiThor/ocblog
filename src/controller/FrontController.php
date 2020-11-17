@@ -14,6 +14,11 @@ class FrontController extends Controller
         ]);
     }
 
+    public function contact()
+    {
+        return $this->view->render('contact');
+    }
+
     public function article($articleId)
     {
         $article = $this->articleDAO->getArticle($articleId);

@@ -75,6 +75,9 @@ class Router
                 elseif($route === 'administration'){
                     $this->backController->administration();
                 }
+                elseif($route === 'contact'){
+                    $this->frontController->contact();
+                }
                 else{
                     $this->errorController->errorNotFound();
                 }

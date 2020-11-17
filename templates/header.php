@@ -2,6 +2,7 @@
 <html lang="fr">
 
 <head>
+  <title><?= $title ?></title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -27,8 +28,6 @@
 
   <link rel="stylesheet" href="css/style.css">
 
-  <title><?= $title ?></title>
-
 </head>
 
 <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
@@ -48,8 +47,8 @@
       <div class="container">
         <div class="row align-items-center">
           <div class="col-12 col-lg-6 d-flex">
-            <a href="index.html" class="site-logo">
-              Meranda
+            <a href="../public/index.php" class="site-logo"> <!-- .Titre de mon blog -->
+              Developpeur PHP/Symfony
             </a>
 
             <a href="#" class="ml-auto d-inline-block d-lg-none site-menu-toggle js-menu-toggle text-black"><span
