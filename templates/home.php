@@ -26,7 +26,7 @@
                         <div class="row">
                             <div class="col-lg-6">
                                 <p>
-                                <img src="images/big_img_1.jpg" alt="Image" class="img-fluid">
+                                <img src="meranda/images/big_img_1.jpg" alt="Image" class="img-fluid">
                                 </p>
                             </div>
                             <div class="col-lg-6 pl-md-5">
