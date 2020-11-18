@@ -48,7 +48,7 @@
         <div class="row align-items-center">
           <div class="col-12 col-lg-6 d-flex">
             <a href="../public/index.php" class="site-logo"> <!-- .Titre de mon blog -->
-              Developpeur PHP/Symfony
+            <</>/> PHP/Symfony <</>/>
             </a>
 
             <a href="#" class="ml-auto d-inline-block d-lg-none site-menu-toggle js-menu-toggle text-black"><span
