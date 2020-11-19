@@ -10,7 +10,7 @@
                 SOULICHANH Guillaume - Copyright &copy;<script>document.write(new Date().getFullYear());</script> 
                 </p>
                 </br>
-                <p> lien administration</p>
+                <a href="../public/index.php?route=administration">Administration</a>
             </div>
           </div>
         </div>
