@@ -3,9 +3,9 @@ $route = isset($post) && $post->get('id') ? 'editComment' : 'addComment';
 $submit = $route === 'addComment' ? 'Ajouter' : 'Mettre à jour';
 ?>
 
-<form method="post" action="../public/index.php?route=<?= $route; ?>&articleId=<?= htmlspecialchars($article->getId()); ?>">
+<form class="p-8 bg-light" method="post" action="../public/index.php?route=<?= $route; ?>&articleId=<?= htmlspecialchars($article->getId()); ?>">
     <div class="row">
-        <div class="col-md-6 form-group">
+        <div class="form-group">
             <label for="pseudo">Pseudo</label><br>
             <input class="form-control form-control-lg" type="text" id="pseudo" name="pseudo" value="<?= isset($post) ? htmlspecialchars($post->get('pseudo')): ''; ?>"><br>
             <?= isset($errors['pseudo']) ? $errors['pseudo'] : ''; ?>
