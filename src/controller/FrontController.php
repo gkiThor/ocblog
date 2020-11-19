@@ -95,6 +95,6 @@ class FrontController extends Controller
                 ]);
             }
         }
-        return $this->view->render('login');
+        return $this->view->render('frontend/login');
     }
 }
