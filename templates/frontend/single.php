@@ -17,7 +17,9 @@
                     <a class="btn btn-primary py-3 px-3" href="../public/index.php?route=deleteArticle&articleId=<?= $article->getId(); ?>">Supprimer</a>
                 </div>
                 <br>
-                <a href="../public/index.php">Retour à l'accueil</a>
+                <div> 
+                        <a href="../public/index.php">Retour à l'accueil</a> 
+                </div>
             </div>
 
             <div class="col-lg-6">
@@ -32,27 +34,27 @@
                     <h3>Commentaires</h3>
                     <div class="comment-list">
                         <?php
-                        foreach ($comments as $comment)
-                        {
-                            ?>
-                            <h4><?= htmlspecialchars($comment->getPseudo());?></h4>
-                            <p><?= htmlspecialchars($comment->getContent());?></p>
-                            <p>Posté le <?= htmlspecialchars($comment->getCreatedAt());?></p>
-                            <?php
-                            if($comment->isFlag()) {
+                            foreach ($comments as $comment)
+                            {
                                 ?>
-                                <p>Ce commentaire a déjà été signalé</p>
+                                <h4><?= htmlspecialchars($comment->getPseudo());?></h4>
+                                <p><?= htmlspecialchars($comment->getContent());?></p>
+                                <p>Posté le <?= htmlspecialchars($comment->getCreatedAt());?></p>
                                 <?php
-                            } else {
+                                if($comment->isFlag()) {
+                                    ?>
+                                    <p>Ce commentaire a déjà été signalé</p>
+                                    <?php
+                                } else {
+                                    ?>
+                                    <p><a href="../public/index.php?route=flagComment&commentId=<?= $comment->getId(); ?>">Signaler le commentaire</a></p>
+                                    <?php
+                                }
                                 ?>
-                                <p><a href="../public/index.php?route=flagComment&commentId=<?= $comment->getId(); ?>">Signaler le commentaire</a></p>
+                                <p><a href="../public/index.php?route=deleteComment&commentId=<?= $comment->getId(); ?>">Supprimer le commentaire</a></p>
+                                <br>
                                 <?php
                             }
-                            ?>
-                            <p><a href="../public/index.php?route=deleteComment&commentId=<?= $comment->getId(); ?>">Supprimer le commentaire</a></p>
-                            <br>
-                            <?php
-                        }
                         ?>
                     </div>
                     

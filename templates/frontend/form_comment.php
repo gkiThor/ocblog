@@ -4,11 +4,18 @@ $submit = $route === 'addComment' ? 'Ajouter' : 'Mettre à jour';
 ?>
 
 <form method="post" action="../public/index.php?route=<?= $route; ?>&articleId=<?= htmlspecialchars($article->getId()); ?>">
-    <label for="pseudo">Pseudo</label><br>
-    <input type="text" id="pseudo" name="pseudo" value="<?= isset($post) ? htmlspecialchars($post->get('pseudo')): ''; ?>"><br>
-    <?= isset($errors['pseudo']) ? $errors['pseudo'] : ''; ?>
-    <label for="content">Message</label><br>
-    <textarea id="content" name="content"><?= isset($post) ? htmlspecialchars($post->get('content')): ''; ?></textarea><br>
-    <?= isset($errors['content']) ? $errors['content'] : ''; ?>
-    <input type="submit" value="<?= $submit; ?>" id="submit" name="submit">
+    <div class="row">
+        <div class="col-md-6 form-group">
+            <label for="pseudo">Pseudo</label><br>
+            <input class="form-control form-control-lg" type="text" id="pseudo" name="pseudo" value="<?= isset($post) ? htmlspecialchars($post->get('pseudo')): ''; ?>"><br>
+            <?= isset($errors['pseudo']) ? $errors['pseudo'] : ''; ?>
+
+            <label for="content">Message</label><br>
+            <textarea class="form-control form-control-lg" id="content" name="content"><?= isset($post) ? htmlspecialchars($post->get('content')): ''; ?></textarea><br>
+            <?= isset($errors['content']) ? $errors['content'] : ''; ?>
+            <input class="btn btn-primary py-3 px-3" type="submit" value="<?= $submit; ?>" id="submit" name="submit">
+        </div>
+    </div>
+    
+    
 </form>
