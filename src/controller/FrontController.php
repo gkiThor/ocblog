@@ -16,7 +16,7 @@ class FrontController extends Controller
 
     public function contact()
     {
-        return $this->view->render('contact');
+        return $this->view->render('frontend/contact');
     }
 
     public function article($articleId)
