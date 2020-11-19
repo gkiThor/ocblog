@@ -23,7 +23,7 @@ class FrontController extends Controller
     {
         $article = $this->articleDAO->getArticle($articleId);
         $comments = $this->commentDAO->getCommentsFromArticle($articleId);
-        return $this->view->render('single', [
+        return $this->view->render('frontend/single', [
             'article' => $article,
             'comments' => $comments
         ]);
@@ -40,7 +40,7 @@ class FrontController extends Controller
             }
             $article = $this->articleDAO->getArticle($articleId);
             $comments = $this->commentDAO->getCommentsFromArticle($articleId);
-            return $this->view->render('single', [
+            return $this->view->render('frontend/single', [
                 'article' => $article,
                 'comments' => $comments,
                 'post' => $post,
