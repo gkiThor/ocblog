@@ -68,13 +68,13 @@ class FrontController extends Controller
                 $this->session->set('register', 'Votre inscription a bien été effectuée');
                 header('Location: ../public/index.php');
             }
-            return $this->view->render('register', [
+            return $this->view->render('frontend/register', [
                 'post' => $post,
                 'errors' => $errors
             ]);
 
         }
-        return $this->view->render('register');
+        return $this->view->render('frontend/register');
     }
 
     public function login(Parameter $post)
@@ -90,7 +90,7 @@ class FrontController extends Controller
             }
             else {
                 $this->session->set('error_login', 'Le pseudo ou le mot de passe sont incorrects');
-                return $this->view->render('login', [
+                return $this->view->render('frontend/login', [
                     'post'=> $post
                 ]);
             }

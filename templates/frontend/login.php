@@ -1,6 +1,7 @@
 <?php $this->title = "Connexion"; ?>
 
 <?= $this->session->show('error_login'); ?>
+
 <div class="site-section bg-light">
     <div class="container">
         <div class="row">
