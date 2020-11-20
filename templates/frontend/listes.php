@@ -19,35 +19,67 @@
                 <?= $this->session->show('delete_account'); ?>
             </div>
 
-            <div class="post-entry-2 d-flex">
-              <div class="thumbnail order-md-2" style="background-image: url('images/img_h_4.jpg')"></div>
-              <div class="contents order-md-1 pl-0">
-                <h2><a href="blog-single.html">News Needs to Meet Its Audiences Where They Are</a></h2>
-                <p class="mb-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi temporibus praesentium neque, voluptatum quam quibusdam.</p>
-                <div class="post-meta">
-                  <span class="d-block"><a href="#">Dave Rogers</a> in <a href="#">News</a></span>
-                  <span class="date-read">Jun 14 <span class="mx-1">&bullet;</span> 3 min read <span class="icon-star2"></span></span>
-                </div>
-              </div>
-            </div>
-
-        
+                    
             <?php
                 if ($this->session->get('pseudo')) {
             ?>
+        <div class="site-navbar js-sticky-header site-navbar-target d-none pl-0 d-lg-block">
+        <div class="container">
+        <div class="d-flex align-items-center">
+          
+          <div class="mr-auto">
+            <nav class="site-navigation position-relative text-right" role="navigation">
+              <ul class="site-menu main-menu js-clone-nav mr-auto d-none pl-0 d-lg-block">
+                <li class="active">
                 <a href="../public/index.php?route=logout">Déconnexion</a>
+                </li>
+                <li>
                 <a href="../public/index.php?route=profile">Profil</a>
+                </li>
+
+                
             <?php if($this->session->get('role') === 'admin') { ?>
+                <li>
                 <a href="../public/index.php?route=administration">Administration</a>
+                </li>
             <?php } ?>
+
+                <li>
                 <a href="../public/index.php?route=addArticle">Nouvel article</a> <br>
+                </li>
+                </ul>                                                                                                                                                                                                                                                                                         
+            </nav>
+
+          </div>
+         
+        </div>
+      </div>
+        </div>
             <?php
                 } else {
             ?>
-            <div class="row">
-                <a class="btn btn-primary" href="../public/index.php?route=register">Inscription</a>
-                <a class="btn btn-primary py-1 px-2" href="../public/index.php?route=login">Connexion</a> <br>
+            <div class="site-navbar js-sticky-header site-navbar-target d-none pl-0 d-lg-block">
+                <div class="container">
+                    <div class="d-flex align-items-center">
+                    
+                        <div class="mr-auto">
+                            <nav class="site-navigation position-relative text-right" role="navigation">
+                                <ul class="site-menu main-menu js-clone-nav mr-auto d-none pl-0 d-lg-block">
+                                    <li class="active">
+                                        <a class="btn btn-primary " href="../public/index.php?route=register">Inscription</a>
+                                    </li>
+                                    <li>
+                                        <a class="btn btn-primary " href="../public/index.php?route=login">Connexion</a> <br>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
             </div>
+
+            </br>
+            
             <?php
                 }
             ?>
