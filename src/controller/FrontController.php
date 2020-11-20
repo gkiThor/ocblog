@@ -17,9 +17,8 @@ class FrontController extends Controller
     public function listes()
     {
         $articles = $this->articleDAO->getArticles();
-        return $this->view->render('frontend/home', [
-           'articles' => $articles
-        ]);
+        return $this->view->render('frontend/listes',[
+            'articles' => $articles]);
     }
 
     public function contact()

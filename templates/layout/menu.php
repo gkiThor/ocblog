@@ -10,7 +10,7 @@
                   <a href="../public/index.php" class="nav-link text-left">Accueil</a>
                 </li>
                 <li>
-                    <a href="../public/index.php?route=contact" class="nav-link text-left">listes</a>
+                    <a href="../public/index.php?route=listes" class="nav-link text-left">listes</a>
                 </li>
                 <li>
                     <a href="../public/index.php?route=contact" class="nav-link text-left">Contact</a>
