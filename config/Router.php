@@ -78,6 +78,9 @@ class Router
                 elseif($route === 'contact'){
                     $this->frontController->contact();
                 }
+                elseif($route === 'listes'){
+                    $this->frontController->listes();
+                }
                 else{
                     $this->errorController->errorNotFound();
                 }
