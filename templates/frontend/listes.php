@@ -66,10 +66,10 @@
                             <nav class="site-navigation position-relative text-right" role="navigation">
                                 <ul class="site-menu main-menu js-clone-nav mr-auto d-none pl-0 d-lg-block">
                                     <li class="active">
-                                        <a class="btn btn-primary " href="../public/index.php?route=register">Inscription</a>
+                                        <a href="../public/index.php?route=register">Inscription</a>
                                     </li>
                                     <li>
-                                        <a class="btn btn-primary " href="../public/index.php?route=login">Connexion</a> <br>
+                                        <a href="../public/index.php?route=login">Connexion</a> <br>
                                     </li>
                                 </ul>
                             </nav>
@@ -79,7 +79,7 @@
             </div>
 
             </br>
-            
+
             <?php
                 }
             ?>
