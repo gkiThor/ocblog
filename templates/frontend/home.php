@@ -1,6 +1,6 @@
 <?php $this->title = 'Accueil'; ?>
 
-<div class="site-section bg-light">
+<div class="site-section">
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
