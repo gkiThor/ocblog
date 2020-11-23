@@ -43,9 +43,6 @@
                     </div>
                 </div>
 
-                <a class="btn btn-primary py-3 px-5" href="../public/cv/CV_gsoulichanh.pdf">Télécharger mon CV</a>
-                <p>lien réseaux sociaux</p>
-                
             </div>
         </div><!-- row -->
     </div><!-- container -->

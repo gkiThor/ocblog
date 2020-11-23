@@ -48,7 +48,7 @@
         <div class="row align-items-center">
           <div class="col-12 col-lg-6 d-flex">
             <a href="../public/index.php" class="site-logo"> <!-- .Titre de mon blog -->
-            <</>/> PHP/Symfony <</>/>
+              - Developpeur PHP/Symfony -
             </a>
 
             <a href="#" class="ml-auto d-inline-block d-lg-none site-menu-toggle js-menu-toggle text-black"><span
@@ -58,18 +58,12 @@
 
           <div class="col-12 col-lg-6 ml-auto d-flex">
             <div class="ml-md-auto top-social d-none d-lg-inline-block">
-              <a href="#" class="d-inline-block p-3"><span class="icon-facebook"></span></a>
-                <a href="#" class="d-inline-block p-3"><span class="icon-twitter"></span></a>
-                <a href="#" class="d-inline-block p-3"><span class="icon-instagram"></span></a>
+                <a href="#" class="d-inline-block p-3"><span class="icon-linkedin"></span></a>
+                <a href="https://github.com/gkiThor?tab=repositories" class="d-inline-block p-3"><span class="icon-github"></span></a>
             </div>
-            <form action="#" class="search-form d-inline-block">
-
-              <div class="d-flex">
-                <input type="email" class="form-control" placeholder="Search...">
-                <button type="submit" class="btn btn-secondary" ><span class="icon-search"></span></button>
-              </div>
-            </form>
-
+      
+            <a class="btn btn-primary py-3 px-5" href="../public/cv/CV_gsoulichanh.pdf">Télécharger mon CV</a>
+                
             
           </div>
 
