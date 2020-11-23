@@ -90,7 +90,8 @@
             ?>
 
                 <div class="post-entry-2 d-flex">
-                <div class="thumbnail order-md-2" style="background-image: url('images/img_h_4.jpg')"></div>
+                    <div class="thumbnail order-md-2" style="background-image: url('meranda/images/chaletEtCaviar.png')">
+                    </div>
                     <div class="contents order-md-1 pl-0">
                         <h2><a href="../public/index.php?route=article&articleId=<?= htmlspecialchars($article->getId());?>"><?= htmlspecialchars($article->getTitle());?></a></h2>
                         <p class="mb-3"><?= htmlspecialchars($article->getContent());?></p>
