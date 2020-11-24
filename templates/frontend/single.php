@@ -19,8 +19,10 @@
                 <br>
                 <div> 
                         <a href="../public/index.php">Retour à l'accueil</a> 
+                        </br>
                 </div>
             </div>
+
 
             <div class="col-lg-6">
                 <div id="comments" class="text-left" style="margin-left: 50px">
@@ -31,32 +33,38 @@
 
             <div class="row">
                 <div class="col-lg-12">
-                    <h3>Commentaires</h3>
-                    <div class="comment-list">
-                        <?php
-                            foreach ($comments as $comment)
-                            {
-                                ?>
-                                <h4><?= htmlspecialchars($comment->getPseudo());?></h4>
-                                <p><?= htmlspecialchars($comment->getContent());?></p>
-                                <p>Posté le <?= htmlspecialchars($comment->getCreatedAt());?></p>
-                                <?php
-                                if($comment->isFlag()) {
-                                    ?>
-                                    <p>Ce commentaire a déjà été signalé</p>
-                                    <?php
-                                } else {
-                                    ?>
-                                    <p><a href="../public/index.php?route=flagComment&commentId=<?= $comment->getId(); ?>">Signaler le commentaire</a></p>
-                                    <?php
-                                }
-                                ?>
-                                <p><a href="../public/index.php?route=deleteComment&commentId=<?= $comment->getId(); ?>">Supprimer le commentaire</a></p>
-                                <br>
-                                <?php
-                            }
-                        ?>
+                    <div class="section-title">
+                      <h2 class="mb-5">Commentaires</h2>
                     </div>
+                    <ul class="comment-list">
+                        <li class="comment">
+                            <div class="comment-body">
+                                <?php
+                                    foreach ($comments as $comment)
+                                    {
+                                        ?>
+                                        <h4><?= htmlspecialchars($comment->getPseudo());?></h4>
+                                        <p><?= htmlspecialchars($comment->getContent());?></p>
+                                        <p>Posté le <?= htmlspecialchars($comment->getCreatedAt());?></p>
+                                        <?php
+                                        if($comment->isFlag()) {
+                                            ?>
+                                            <p>Ce commentaire a déjà été signalé</p>
+                                            <?php
+                                        } else {
+                                            ?>
+                                            <p><a href="../public/index.php?route=flagComment&commentId=<?= $comment->getId(); ?>"  class="reply">Signaler le commentaire</a></p>
+                                            <?php
+                                        }
+                                        ?>
+                                        <p><a href="../public/index.php?route=deleteComment&commentId=<?= $comment->getId(); ?>"  class="reply">Supprimer le commentaire</a></p>
+                                        <br>
+                                        <?php
+                                    }
+                                ?>
+                            </div>
+                        </li>
+                    </ul>
                     
                 </div>
             </div>
