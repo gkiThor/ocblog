@@ -9,16 +9,28 @@ class FrontController extends Controller
     public function home()
     {
         $articles = $this->articleDAO->getArticles();
-        return $this->view->render('home', [
+        return $this->view->render('frontend/home', [
            'articles' => $articles
         ]);
+    }
+
+    public function listes()
+    {
+        $articles = $this->articleDAO->getArticles();
+        return $this->view->render('frontend/listes',[
+            'articles' => $articles]);
+    }
+
+    public function contact()
+    {
+        return $this->view->render('frontend/contact');
     }
 
     public function article($articleId)
     {
         $article = $this->articleDAO->getArticle($articleId);
         $comments = $this->commentDAO->getCommentsFromArticle($articleId);
-        return $this->view->render('single', [
+        return $this->view->render('frontend/single', [
             'article' => $article,
             'comments' => $comments
         ]);
@@ -35,7 +47,7 @@ class FrontController extends Controller
             }
             $article = $this->articleDAO->getArticle($articleId);
             $comments = $this->commentDAO->getCommentsFromArticle($articleId);
-            return $this->view->render('single', [
+            return $this->view->render('frontend/single', [
                 'article' => $article,
                 'comments' => $comments,
                 'post' => $post,
@@ -63,13 +75,13 @@ class FrontController extends Controller
                 $this->session->set('register', 'Votre inscription a bien été effectuée');
                 header('Location: ../public/index.php');
             }
-            return $this->view->render('register', [
+            return $this->view->render('frontend/register', [
                 'post' => $post,
                 'errors' => $errors
             ]);
 
         }
-        return $this->view->render('register');
+        return $this->view->render('frontend/register');
     }
 
     public function login(Parameter $post)
@@ -85,11 +97,11 @@ class FrontController extends Controller
             }
             else {
                 $this->session->set('error_login', 'Le pseudo ou le mot de passe sont incorrects');
-                return $this->view->render('login', [
+                return $this->view->render('frontend/login', [
                     'post'=> $post
                 ]);
             }
         }
-        return $this->view->render('login');
+        return $this->view->render('frontend/login');
     }
 }

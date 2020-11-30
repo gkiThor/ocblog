@@ -1,7 +1,13 @@
 <?php $this->title = "Nouvel article"; ?>
-<h1>Mon blog</h1>
-<p>En construction</p>
-<div>
-    <?php include('form_article.php');?>
-    <a href="../public/index.php">Retour à l'accueil</a>
+<div class="site-section bg-light">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <?php include('form_article.php');?>
+                <div class="text-center"> 
+                    <a href="../public/index.php">Retour à l'accueil</a> 
+                </div> 
+            </div>
+        </div>
+    </div>
 </div>
