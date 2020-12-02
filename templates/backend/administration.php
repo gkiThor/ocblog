@@ -22,10 +22,11 @@
             <div class="col-12">
 
                 <h2>Articles</h2>
-                <a href="../public/index.php?route=addArticle">Nouvel article</a>
+                <a href="../public/index.php?route=addArticle" class="btn btn-primary py-3 px-5">Nouvel article</a>
+                <br/>
                 <div class="table-responsive">
                     <table class="table  table-striped">
-                        <tr>
+                        <tr class="bg-primary">
                             <td>Id</td>
                             <td>Titre</td>
                             <td>Contenu</td>
@@ -57,7 +58,7 @@
                 <h2>Commentaires signalés</h2>
                 <div class="table-responsive">
                     <table class="table  table-striped">
-                        <tr>
+                        <tr class="bg-primary">
                             <td>Id</td>
                             <td>Pseudo</td>
                             <td>Message</td>
@@ -74,8 +75,8 @@
                                 <td><?= substr(htmlspecialchars($comment->getContent()), 0, 150);?></td>
                                 <td>Créé le : <?= htmlspecialchars($comment->getCreatedAt());?></td>
                                 <td>
-                                    <a href="../public/index.php?route=unflagComment&commentId=<?= $comment->getId(); ?>">Désignaler le commentaire</a>
-                                    <a href="../public/index.php?route=deleteComment&commentId=<?= $comment->getId(); ?>">Supprimer le commentaire</a>
+                                    <a href="../public/index.php?route=unflagComment&commentId=<?= $comment->getId(); ?>">Désignaler le commentaire </a>
+                                    <a href="../public/index.php?route=deleteComment&commentId=<?= $comment->getId(); ?>"> / Supprimer le commentaire</a>
                                 </td>
                             </tr>
                             <?php
@@ -87,7 +88,7 @@
                 <h2>Utilisateurs</h2>
                 <div class="table-responsive">
                     <table class="table  table-striped">
-                        <tr>
+                        <tr class="bg-primary">
                             <td>Id</td>
                             <td>Pseudo</td>
                             <td>Date</td>
