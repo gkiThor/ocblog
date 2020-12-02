@@ -23,7 +23,7 @@
             <?php
                 if ($this->session->get('pseudo')) {
             ?>
-        <div class="site-navbar js-sticky-header site-navbar-target d-none pl-0 d-lg-block">
+        <div class="site-navbar  site-navbar-target d-none pl-0 d-lg-block">
         <div class="container">
         <div class="d-flex align-items-center">
           
@@ -58,7 +58,7 @@
             <?php
                 } else {
             ?>
-            <div class="site-navbar js-sticky-header site-navbar-target d-none pl-0 d-lg-block">
+            <div class="site-navbar site-navbar-target d-none pl-0 d-lg-block">
                 <div class="container">
                     <div class="d-flex align-items-center">
                     
