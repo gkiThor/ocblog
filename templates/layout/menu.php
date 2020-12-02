@@ -15,12 +15,6 @@
                 <li>
                     <a href="../public/index.php?route=contact" class="nav-link text-left">Contact</a>
                 </li>
-                <li>
-                    <a href="../public/index.php?route=register" class="nav-link text-right">Inscription</a>
-                </li>
-                <li>
-                    <a href="../public/index.php?route=login" class="nav-link text-right">Connexion</a>
-                </li>
               </ul>
             </nav>
 

@@ -23,62 +23,47 @@
             <?php
                 if ($this->session->get('pseudo')) {
             ?>
-        <div class="site-navbar  site-navbar-target d-none pl-0 d-lg-block">
-        <div class="container">
-        <div class="d-flex align-items-center">
-          
-          <div class="mr-auto">
-            <nav class="site-navigation position-relative text-right" role="navigation">
-              <ul class="site-menu main-menu js-clone-nav mr-auto d-none pl-0 d-lg-block">
-                <li class="active">
-                <a href="../public/index.php?route=logout">Déconnexion</a>
-                </li>
-                <li>
-                <a href="../public/index.php?route=profile">Profil</a>
-                </li>
+            <!-- pagination -->
+            <nav aria-label="Page navigation example">
+                <ul class="pagination justify-content-center">
+                    <li class="page-item">
+                        <a class="page-link" href="../public/index.php?route=logout">Déconnexion</a>
+                    </li>
+                    <li class="page-item">
+                        <a class="page-link" href="../public/index.php?route=profile">Profil</a>
+                    </li>
 
-                
-            <?php if($this->session->get('role') === 'admin') { ?>
-                <li>
-                <a href="../public/index.php?route=administration">Administration</a>
-                </li>
-            <?php } ?>
+                    <?php if($this->session->get('role') === 'admin') { ?>
 
-                <li>
-                <a href="../public/index.php?route=addArticle">Nouvel article</a> <br>
-                </li>
-                </ul>                                                                                                                                                                                                                                                                                         
+                    <li class="page-item">
+                        <a  class="page-link" href="../public/index.php?route=administration">Administration</a>
+                    </li>
+
+                    <?php } ?>
+
+                    <li class="page-item">
+                        <a class="page-link" href="../public/index.php?route=addArticle">Nouvel article</a> <br>
+                    </li>
+                </ul>
             </nav>
+            <!-- FinPagination -->
 
-          </div>
-         
-        </div>
-      </div>
-        </div>
             <?php
                 } else {
             ?>
-            <div class="site-navbar site-navbar-target d-none pl-0 d-lg-block">
-                <div class="container">
-                    <div class="d-flex align-items-center">
-                    
-                        <div class="mr-auto">
-                            <nav class="site-navigation position-relative text-right" role="navigation">
-                                <ul class="site-menu main-menu js-clone-nav mr-auto d-none pl-0 d-lg-block">
-                                    <li class="active">
-                                        <a href="../public/index.php?route=register">Inscription</a>
-                                    </li>
-                                    <li>
-                                        <a href="../public/index.php?route=login">Connexion</a> <br>
-                                    </li>
-                                </ul>
-                            </nav>
-                        </div>
-                    </div>
-                </div>
-            </div>
 
-            </br>
+            <!-- pagination -->
+            <nav aria-label="Page navigation example">
+                <ul class="pagination justify-content-center">
+                <li class="page-item">
+                    <a class="page-link" href="../public/index.php?route=register">Inscription</a>
+                </li>
+                <li class="page-item">
+                    <a class="page-link" href="../public/index.php?route=login">Connexion</a>
+                </li>
+                </ul>
+            </nav>
+            <!-- FinPagination -->
 
             <?php
                 }
@@ -106,6 +91,6 @@
                 }
             ?>
 
-        </div>
-    </div>
-</div>
+        </div> <!-- row -->
+    </div> <!-- container -->
+</div> <!-- site-section -->
