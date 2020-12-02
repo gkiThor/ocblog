@@ -33,13 +33,13 @@
 
                 <div class="table-responsive">
                     <table class="table  table-striped">
-                        <tr class="bg-primary">
-                            <td>Id</td>
-                            <td>Titre</td>
-                            <td>Contenu</td>
-                            <td>Auteur</td>
-                            <td>Date</td>
-                            <td>Actions</td>
+                        <tr class="bg-primary text-center">
+                            <td>ID</td>
+                            <td>TITRE</td>
+                            <td>CONTENU</td>
+                            <td>AUTEUR</td>
+                            <td>DATE</td>
+                            <td>ACTIONS</td>
                         </tr>
                         <?php
                         foreach ($articles as $article)
@@ -65,12 +65,12 @@
                 <h2>Commentaires signalés</h2>
                 <div class="table-responsive">
                     <table class="table  table-striped">
-                        <tr class="bg-primary">
-                            <td>Id</td>
-                            <td>Pseudo</td>
-                            <td>Message</td>
-                            <td>Date</td>
-                            <td>Actions</td>
+                        <tr class="bg-primary text-center">
+                            <td>ID</td>
+                            <td>PSEUDO</td>
+                            <td>MESSAGE</td>
+                            <td>DATE</td>
+                            <td>ACTIONS</td>
                         </tr>
                         <?php
                         foreach ($comments as $comment)
@@ -95,12 +95,12 @@
                 <h2>Utilisateurs</h2>
                 <div class="table-responsive">
                     <table class="table  table-striped">
-                        <tr class="bg-primary">
-                            <td>Id</td>
-                            <td>Pseudo</td>
-                            <td>Date</td>
-                            <td>Rôle</td>
-                            <td>Actions</td>
+                        <tr class="bg-primary text-center">
+                            <td>ID</td>
+                            <td>PSEUDO</td>
+                            <td>DATE</td>
+                            <td>ROLE</td>
+                            <td>ACTIONS</td>
                         </tr>
                         <?php
                         foreach ($users as $user)
