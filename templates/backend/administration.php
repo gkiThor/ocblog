@@ -22,7 +22,8 @@
             <div class="col-12">
 
                 <h2>Articles</h2>
-
+                
+                <!-- bouton nouvel article -->
                 <div class="row">
                     <div class="col-12">
                         <div class="text-center">
@@ -31,6 +32,7 @@
                     </div>
                 </div>
 
+                <!-- Tableau article -->
                 <div class="table-responsive">
                     <table class="table  table-striped">
                         <tr class="bg-primary text-center">
@@ -61,8 +63,10 @@
                         ?>
                     </table>
                 </div>
+                <!-- FinTableau article -->
 
                 <h2>Commentaires signalés</h2>
+                <!-- Tableau commentaires signalés -->
                 <div class="table-responsive">
                     <table class="table  table-striped">
                         <tr class="bg-primary text-center">
@@ -91,8 +95,10 @@
                         ?>
                     </table>
                 </div>
+                <!-- FinTableau commentaires signalés -->
 
                 <h2>Utilisateurs</h2>
+                <!-- Tableau Utilisateurs -->
                 <div class="table-responsive">
                     <table class="table  table-striped">
                         <tr class="bg-primary text-center">
@@ -130,6 +136,7 @@
                         ?>
                     </table>
                 </div>
+                <!-- FinTableau Utilisateurs -->
 
             </div>
         </div>
