@@ -22,8 +22,15 @@
             <div class="col-12">
 
                 <h2>Articles</h2>
-                <a href="../public/index.php?route=addArticle" class="btn btn-primary py-3 px-5">Nouvel article</a>
-                <br/>
+
+                <div class="row">
+                    <div class="col-12">
+                        <div class="text-center">
+                        <a href="../public/index.php?route=addArticle" class="btn btn-primary py-3 px-5">Nouvel article</a>
+                        </div>
+                    </div>
+                </div>
+
                 <div class="table-responsive">
                     <table class="table  table-striped">
                         <tr class="bg-primary">
