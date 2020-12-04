@@ -62,9 +62,8 @@
                 <a href="https://github.com/gkiThor?tab=repositories" class="d-inline-block p-3"><span class="icon-github"></span></a>
             </div>
       
-            <a class="btn btn-primary py-3 px-5" href="../public/cv/CV_gsoulichanh.pdf"> Mon CV</a>
+            <a class="btn btn-primary" href="../public/cv/CV_gsoulichanh.pdf">CV</a>
                 
-            
           </div>
 
           <div class="col-6 d-block d-lg-none text-right">
