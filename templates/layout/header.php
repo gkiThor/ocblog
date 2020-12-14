@@ -58,7 +58,7 @@
 
           <div class="col-12 col-lg-6 ml-auto d-flex">
             <div class="ml-md-auto top-social d-none d-lg-inline-block">
-                <a href="#" class="d-inline-block p-3"><span class="icon-linkedin"></span></a>
+                <a href="https://www.linkedin.com/in/guillaume-soulichanh-874976142/" class="d-inline-block p-3"><span class="icon-linkedin"></span></a>
                 <a href="https://github.com/gkiThor?tab=repositories" class="d-inline-block p-3"><span class="icon-github"></span></a>
             </div>
       
