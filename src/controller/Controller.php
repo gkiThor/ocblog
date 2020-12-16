@@ -8,6 +8,9 @@ use App\src\DAO\ArticleDAO;
 use App\src\DAO\CommentDAO;
 use App\src\DAO\UserDAO;
 use App\src\model\View;
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\SMTP;
+use PHPMailer\PHPMailer\Exception;
 
 abstract class Controller
 {
@@ -20,9 +23,15 @@ abstract class Controller
     protected $post;
     protected $session;
     protected $validation;
+    protected $phpmailer;
+    protected $smtp;
+
 
     public function __construct()
     {
+        $this->exceptionPhpmailer = new Exception();
+        $this->smtp = new SMTP();
+        $this->phpmailer = new PHPMailer();
         $this->articleDAO = new ArticleDAO();
         $this->commentDAO = new CommentDAO();
         $this->userDAO = new UserDAO();
