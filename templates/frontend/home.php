@@ -1,10 +1,12 @@
 <?php $this->title = 'Accueil'; ?>
 
+
 <div class="site-section">
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
-                <div class="site-section">
+
+                
                     <div class="container">
                         <div class="row">
                                 <div class="col-12 text-center">
@@ -13,40 +15,130 @@
                                         <p>Je me présente SOULICHANH Guillaume 39 ans.</br>
                                         Actuellement en formation à distance avec OpenClassroom depuis 2019.</br> 
                                         Pour acquérir le titre de développeur PHP/Symfony.</p>
-
                                     </div>
                                 </div>
                         </div>
-                        <div class="row">
-                            <div class="col-12 text-left">
-                                <div class="section-title mb-5">
-                                <h2>SOULICHANH Guillaume</h2>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-lg-6">
-                                <p>
-                                <img src="meranda/images/big_img_1.jpg" alt="Image" class="img-fluid">
-                                </p>
-                            </div>
-                            <div class="col-lg-6 pl-md-5">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam qui obcaecati eaque odio, alias nulla quae, aliquid, rerum consequuntur, quaerat blanditiis cupiditate eos doloribus dolor debitis! Ex eius deleniti, soluta!</p>
-                                <p>Facilis sit molestiae deserunt quo corporis culpa dolorum animi architecto illum sapiente. Asperiores, placeat animi distinctio provident adipisci.</p>
-                                <ul class="ul-check list-unstyled success mt-5">
-                                    <li>Lorem ipsum dolor sit.</li>
-                                    <li>Cupiditate dolores rerum, consequatur!</li>
-                                    <li>Quia dolor molestias voluptatem?</li>
-                                </ul>
-                            </div>
-                        </div>
+                    
                     </div>
-                </div>
+            
 
             </div>
         </div><!-- row -->
     </div><!-- container -->
 </div><!-- site-section -->
+
+
+<!-- Compétences Formations Langages -->
+<!-- site-section compétences -->
+<div class="site-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <table class="table">
+                    <thead class="thead-dark text-center">
+                        <tr>
+                        <th scope="col">Mes compétences</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">UML</th>
+                        </tr>
+                        <tr>
+                            <th scope="row">MERISE</th>
+                        </tr>
+                        <tr>
+                            <th scope="row">MySQL Workbench</th>
+                        </tr>
+                        <tr>
+                            <th scope="row">WordPress</th>
+                        </tr>
+                        <tr>
+                            <th scope="row">Visual studio 2017/Code</th>
+                        </tr>
+                        <tr>
+                            <th scope="row">Eclipse</th>
+                        </tr>
+                        <tr>
+                            <th scope="row">Code::Blocks</th>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- site-section langages -->
+<div class="site-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <table class="table">
+                    <thead class="thead-dark text-center">
+                        <tr>
+                        <th scope="col">Les langages informatiques</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">C/C++</th>
+                        </tr>
+                        <tr>
+                            <th scope="row">C#/VB.NET</th>
+                        </tr>
+                        <tr>
+                            <th scope="row">Java</th>
+                        </tr>
+                        <tr>
+                            <th scope="row">PHP</th>
+                        </tr>
+                        <tr>
+                            <th scope="row">SQL</th>
+                        </tr>
+                        <tr>
+                            <th scope="row">HTML5/CSS3</th>
+                        </tr>
+                        <tr>
+                            <th scope="row">JavaScript</th>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- site-section formations -->
+<div class="site-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <table class="table">
+                    <thead class="thead-dark text-center">
+                        <tr>
+                        <th scope="col">Mes formations</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">Développeur d'application PHP/Symfony</th>
+                        </tr>
+                        <tr>
+                            <th scope="row">Responsable en ingénirie des logiciels</th>
+                        </tr>
+                        <tr>
+                            <th scope="row">Analyste Programmeur junior C/C++, Java</th>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+        </div>
+    </div>
+</div>
 
 <!-- formulaire de contact -->
 <div class="site-section bg-light">
